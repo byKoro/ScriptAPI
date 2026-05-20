@@ -1,5 +1,18 @@
-// Author: ConMaster2112 <https://github.com/ConsoleTerm>
-// Project: https://github.com/Con-JS-Development/Con-Database
+// Author: ConMaster2112 <https://github.com/ConMaster2112>
+// Project: https://github.com/conmaster2112/Con-Database
+
+// Follow Up Changes: byKoro
+//   fix: clear() and rebuild()/rebuildAsync() using bare scoreboard instead of getScoreboard()
+//   fix: CustomDatabase spreading params correctly to super(...params)
+//   fix: inverted instanceof check in constructor type validation
+//   fix: inverted property-in-object checks across 4 Stream methods
+//   fix: loadAsync() now properly yields between iterations with await null
+
+// Notes: ConMaster2112
+//        This code is legacy of pre-dynamic properties script apis era.
+//    Warning: Do not use Async alternatives in modern minecraft environment, 
+//          they no longer work in intended way and might still freeze your tick execution
+
 //@ts-nocheck
 import {
   world,
